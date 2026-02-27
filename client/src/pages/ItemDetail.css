@@ -1,0 +1,123 @@
+.detail-page {
+  padding: 100px 0 80px;
+  min-height: 100vh;
+}
+
+.back-btn {
+  background: none;
+  border: none;
+  color: var(--primary);
+  font-weight: 600;
+  font-size: 15px;
+  cursor: pointer;
+  padding: 0;
+  margin-bottom: 28px;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: opacity 0.2s;
+}
+
+.back-btn:hover { opacity: 0.7; }
+
+.detail-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+  align-items: start;
+}
+
+.detail-image {
+  position: relative;
+  border-radius: var(--radius);
+  overflow: hidden;
+  background: #EFF6FF;
+}
+
+.detail-image img {
+  width: 100%;
+  aspect-ratio: 4/3;
+  object-fit: cover;
+}
+
+.detail-badge {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  padding: 7px 14px;
+  border-radius: 99px;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.detail-category {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--primary-light);
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  margin-bottom: 8px;
+}
+
+.detail-title {
+  font-size: 2rem;
+  color: var(--text);
+  margin-bottom: 24px;
+}
+
+.detail-fields {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.detail-field {
+  background: var(--bg);
+  border-radius: var(--radius-sm);
+  padding: 10px 14px;
+}
+
+.detail-field span {
+  display: block;
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 2px;
+}
+
+.detail-field strong { font-size: 15px; color: var(--text); }
+
+.detail-section { margin-bottom: 20px; }
+.detail-section h4 { font-size: 15px; color: var(--text); margin-bottom: 8px; }
+.detail-section p { font-size: 14px; color: var(--text-muted); line-height: 1.7; }
+
+.claim-btn { width: 100%; justify-content: center; }
+
+.claim-form {
+  background: #EFF6FF;
+  border: 1px solid #BFDBFE;
+  border-radius: var(--radius);
+  padding: 24px;
+  margin-top: 16px;
+}
+
+.claim-form h4 { font-size: 16px; color: var(--primary); margin-bottom: 12px; }
+
+.verification-q {
+  font-size: 14px;
+  font-style: italic;
+  color: var(--text-muted);
+  margin-bottom: 16px;
+  padding: 10px;
+  background: white;
+  border-radius: var(--radius-sm);
+}
+
+.claim-actions { display: flex; gap: 10px; margin-top: 16px; }
+
+@media (max-width: 768px) {
+  .detail-grid { grid-template-columns: 1fr; gap: 24px; }
+}

@@ -1,0 +1,40 @@
+.map-picker { width: 100%; }
+
+.map-hint,
+.map-location-label {
+  margin-top: 8px;
+  padding: 10px 14px;
+  border-radius: var(--radius-sm);
+  font-size: 13px;
+}
+
+.map-hint {
+  background: #EFF6FF;
+  color: var(--primary);
+  text-align: center;
+}
+
+.map-location-label {
+  background: #D1FAE5;
+  color: #065F46;
+  font-weight: 500;
+}
+
+.map-error {
+  padding: 20px;
+  background: #FEE2E2;
+  color: #991B1B;
+  border-radius: var(--radius-sm);
+  text-align: center;
+}
+
+.map-loading {
+  height: 380px;
+  background: #EFF6FF;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--primary);
+  font-weight: 500;
+}
